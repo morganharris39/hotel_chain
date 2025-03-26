@@ -1,1 +1,31 @@
-/* NAVIGATION STUFF GOES HERE  */
+#cards {
+
+    section {
+        display: grid;
+        grid-template-areas: 
+        "image name"
+        "image address" 
+        "image phone";
+        grid-template-columns: 1fr 1fr;
+        column-gap: 0;
+        padding: $gutter;
+    }
+
+    img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    h2 {
+        padding: 0;
+    }
+
+    address {
+        padding-top: 0.2rem;
+    }
+
+    a {
+        margin-bottom: 1rem;
+    }
+
+} // end cards

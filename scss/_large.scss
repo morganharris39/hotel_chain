@@ -36,3 +36,31 @@ nav {
 #navWrapper {
     background-color: #f7f7f7;
 }
+
+#cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    section {
+        grid-template-columns: 40% 1fr;
+    }
+
+    // img {
+    //     width: 90%;
+    // }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h2, address {
+        margin: 0 $gutter 0.5rem $gutter;
+    }
+
+    a {
+        font-size: 16px;
+        padding: 0.32rem 0;
+        margin: 0 $gutter;
+    }
+
+} // end cards

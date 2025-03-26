@@ -120,7 +120,52 @@ main {
     }
 }// end main
 
+#cards {
 
+    section {
+        display: grid;
+        grid-template-areas: 
+        "name" 
+        "image" 
+        "address" 
+        "phone";
+        margin: 1rem $gutter;
+        background-color: blue;
+        border-radius: 6px;
+        padding: 0 $gutter;
+    }
+
+    img {
+        grid-area: image;
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: 4px;
+    }
+
+    h2 {
+        grid-area: name;
+        font-size: 24px;
+    }
+
+    address {
+        grid-area: address;
+    }
+
+    h2, address {
+        margin: 1rem $gutter;
+    }
+
+    a {
+        grid-area: phone;
+        text-align: center;
+        padding: 20px 0;
+        background-color: red;
+        margin: 1rem 3rem;
+        border-radius: 4px;
+    }
+
+} // end cards
 
 /* --------------------------- FOOTER --------------------------- */
 #footerWrapper {
