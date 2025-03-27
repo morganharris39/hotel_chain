@@ -314,14 +314,18 @@ html {
 
 /* --------------------------- BODY --------------------------- */
 body {
-  font-family: "Spline Sans", sans-serif;
-  font-weight: 300;
   min-width: 320px;
+}
+
+.manrope-400 {
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 /* --------------------------- HEADER --------------------------- */
 #headerWrapper {
-  border-bottom: 1px solid #ccc;
+  background-color: #f7f7f7;
 }
 
 header {
@@ -334,8 +338,7 @@ header {
 }
 header span {
   font-size: 1.6rem;
-  font-weight: 300;
-  color: #1d295f;
+  color: #265326;
 }
 
 /* --------------------------- NAVIGATION STUFF GOES HERE --------------------------- */
@@ -346,7 +349,7 @@ header span {
   background: none;
   border: none;
   font-size: 1.5rem;
-  color: #444;
+  color: #265326;
 }
 #hamburgerBtn:before {
   content: "☰";
@@ -374,13 +377,13 @@ nav ul li {
 }
 nav ul li a {
   text-decoration: none;
-  color: #1d295f;
+  color: #265326;
 }
 nav ul li a:hover {
   background-color: rgba(0, 0, 0, 0.1);
 }
 nav li.active a {
-  color: #7c1d47;
+  color: #7E420D;
 }
 
 .moveOver #hamburgerBtn::before {
@@ -401,8 +404,7 @@ nav li.active a {
 main h1 {
   padding: 1rem 10px 0.5rem 10px;
   font-size: 1.5rem;
-  color: #7c1d47;
-  font-weight: 300;
+  color: black;
 }
 main p {
   padding: 0.5rem 10px;
@@ -414,7 +416,7 @@ main p {
   display: grid;
   grid-template-areas: "name" "image" "address" "phone";
   margin: 1rem 10px;
-  background-color: blue;
+  background-color: #8FBC8F;
   border-radius: 6px;
   padding: 0 10px;
 }
@@ -439,25 +441,24 @@ main p {
   grid-area: phone;
   text-align: center;
   padding: 20px 0;
-  background-color: red;
+  background-color: #7E3B2A;
   margin: 1rem 3rem;
   border-radius: 4px;
+  color: white;
+  text-decoration: none;
 }
 
 /* --------------------------- FOOTER --------------------------- */
 #footerWrapper {
-  background-color: #1d295f;
+  background-color: #FFC374;
 }
 
 footer {
   font-size: 0.85rem;
   padding: 1rem 10px;
-  color: #ccc;
+  color: black;
   text-align: center;
   line-height: 150%;
-}
-footer a {
-  color: #ccc;
 }
 
 @media only screen and (min-width: 35rem) {
@@ -520,17 +521,21 @@ footer a {
     grid-template-columns: 1fr 1fr;
   }
   #cards section {
-    grid-template-columns: 40% 1fr;
+    grid-template-columns: 50% 1fr;
   }
   #cards h2 {
     font-size: 20px;
   }
   #cards h2, #cards address {
-    margin: 0 10px 0.5rem 10px;
+    margin: 0 10px 0.6rem 10px;
   }
   #cards a {
     font-size: 16px;
-    padding: 0.32rem 0;
+    padding: 0.8rem 0;
     margin: 0 10px;
+    cursor: pointer;
+  }
+  #cards a:hover {
+    background-color: #542114;
   }
 }
